@@ -1,50 +1,94 @@
 <html>
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Google</title>
-</head>
-<body>
-        <div class="header">
-              <ul>
-                    <li class="gmail"><a href="#">Gmail</a></li>
-                    <li class="image"><a href="#">이미지</a></li>
-                    <li class="google_app"><a href="#"><img src="img/apps.png" alt="Google 앱"></a></li>
-                    <li class="user"><a href="#"><img src="img/user.png" alt="Google 계정: 박소현&#13(dreamywaltz@gmail.com)"></a></li>
-              </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Google</title>
+    <script
+      src="https://kit.fontawesome.com/e9ccf94797.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__func">
+        <a href="https://mail.google.com/">
+          <span class="header__gmail">Gmail</span>
+        </a>
+      </div>
+      <div class="header__func">
+        <a href="https://www.google.co.kr/imghp?hl=ko&tab=wi&ogbl">
+          <span class="header__image">이미지</span>
+        </a>
+      </div>
+      <div class="header__func">
+        <i class="fas fa-th"></i>
+      </div>
+      <div class="header__func">
+        <span class="header__name">SP</span>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__logo">
+        <img src="../img/logo.png" alt="Google" class="main__logo-img" />
+      </div>
+      <div class="main__search-container">
+        <input type="text" class="main__search" />
+        <div class="search__left-icon">
+          <i class="fas fa-search search__icon"></i>
         </div>
-        <div class="container_main">
-              <div class="logo">
-                    <img src="img/logo.png" alt="Google Logo">
-              </div>
-              <div class="searchbox">
-                    <input type="text">
-                    <div class="container_keyboard"><a href="#"><img src="img/keyboard.png" alt="입력도구"></a></div>
-                    <div class="container_mic"><a href="#"><img src="img/microphone.png" alt="음성검색"></a></div>
-              </div>
-              <div class="buttons">
-                    <a href="#"><div class="google_search_button button-search">Google Search</div></a>
-                    <a href="#"><div class="feeling_lucky_button button_search">I'm Feeling Lucky</div></a>
-              </div>
+        <div class="search__right-icon">
+          <i class="fas fa-keyboard search__icon"></i>
+          <i class="fas fa-microphone search__icon"></i>
         </div>
-        <div id="footer">
-              <div class="footer_up">
-                    <span id="country">대한민국</span>
-              </div>
-              <div class="footer_down">
-                    <div class="footer_down_left">
-                          <ul>
-                                <li><a href="#">광고</a></li>
-                                <li><a href="#">비즈니스</a></li>
-                                <li><a href="#">Google 정보</a></li>
-                          </ul>
-                          <ul>
-                                <li><a href="#">개인정보처리방침</a></li>
-                                <li><a href="#">약관</a></li>
-                                <li><a href="#">설정</a></li>
-                          </ul>
-                    </div>
-              </div>
+      </div>
+      <div class="main__buttons">
+        <a
+          href="https://www.google.com/search?biw=1424&bih=812&sxsrf=ACYBGNSGgB9rxx03sc2WK8dWUf-4X-QCHA%3A1579772527433&ei=b2opXsmKGoL7wQPuuYj4CQ&q=%EC%BD%94%EB%94%A9%ED%95%98%EB%8A%94%ED%8E%AD%EA%B7%84&oq=%EC%BD%94%EB%94%A9%ED%95%98%EB%8A%94%ED%8E%AD%EA%B7%84&gs_l=psy-ab.3...2867.4623..4744...2.0..2.121.2006.3j16......0....1..gws-wiz.......35i39j0i131j0j0i20i263j0i67j0i131i20i263.lFJRXPO3AME&ved=0ahUKEwiJ_sqit5nnAhWCfXAKHe4cAp8Q4dUDCAs&uact=5"
+        >
+          <div class="buttons__button">Google 검색</div>
+        </a>
+        <a href="https://www.google.com/doodles/">
+          <div class="buttons__button">I'm Feeling Lucky</div>
+        </a>
+      </div>
+    </main>
+    <nav class="nav">
+      <div class="nav__row">
+        <span class="nav__country nav">대한민국</span>
+      </div>
+      <div class="nav__row">
+        <div class="nav__column">
+          <a
+            href="https://www.google.com/intl/ko_kr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
+          >
+            <span class="nav__enterprise nav__info">광고</span>
+          </a>
+          <a
+            href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"
+          >
+            <span class="nav__enterprise nav__info">비즈니스</span>
+          </a>
+          <a
+            href="https://about.google/?utm_source=google-KR&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+          >
+            <span class="nav__enterprise nav__info">Google 정보</span>
+          </a>
+          <a href="https://google.com/search/howsearchworks/?fg=1">
+            <span class="nav__enterprise nav__info">검색의 원리</span>
+          </a>
         </div>
-</body>
+        <div class="nav__column">
+          <a href="https://policies.google.com/privacy?fg=1">
+            <span class="nav__user nav__info">개인정보처리방침</span>
+          </a>
+          <a href="https://policies.google.com/terms?fg=1">
+            <span class="nav__user nav__info">약관</span>
+          </a>
+          <a href="https://www.google.com/preferences?hl=ko&fg=1">
+            <span class="nav__user nav__info">설정</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>
